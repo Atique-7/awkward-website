@@ -1,9 +1,5 @@
 "use client";
 
-import About from "@/components/PageSections/about";
-import Home from "@/components/PageSections/awkard";
-import Contact from "@/components/PageSections/contact";
-import Services from "@/components/PageSections/services";
 import TabSelector from "@/components/TabSelector";
 import React, { useState } from "react";
 
@@ -19,20 +15,13 @@ const tabs = [
 const HomePage = (props: Props) => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
-    <div className="flex h-full w-full justify-center flex-col">
+    <div className="flex h-full w-full justify-center">
       <TabSelector
         tabs={tabs}
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
       />
-      <div className="flex justify-center items-center mt-20">
-        <div className="w-[80%]">
-          {selectedTab === 0 && <Home />}
-          {selectedTab === 1 && <About />}
-          {selectedTab === 2 && <Services />}
-          {selectedTab === 3 && <Contact />}
-        </div>
-      </div>
+      <div className="text-3xl font-black mt-20"> Home</div>
     </div>
   );
 };
