@@ -11,7 +11,7 @@ type Props = {};
 
 const LandingPage = (props: Props) => {
   return (
-    <div className="flex justify-center items-center flex-col h-full w-dvw relative mt-32 text-center overflow-hidden pb-20">
+    <div className="flex justify-center items-center flex-col h-full relative mt-32 text-center overflow-hidden pb-20">
       <div className="text-[72px] font-[600] mb-16">We Are</div>
       <div className="mb-2">
         <Image src={logo_with_text} width={450} height={400} alt="Logo" />
