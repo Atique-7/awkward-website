@@ -130,6 +130,9 @@ const WebWindow = ({ children }: any) => {
           </motion.div>
         </motion.div>
         <div ref={carouselRef}>{children}</div>
+        <div className="fixed bottom-5 left-[40%]">
+          © Designed by AwkwardStudio , Memoji by Apple Inc.
+        </div>
       </div>
     </div>
   );

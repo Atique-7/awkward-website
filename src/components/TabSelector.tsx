@@ -13,9 +13,9 @@ const TabSelector = ({ tabs, selectedTab, setSelectedTab }: any) => {
             key={index}
             className={`${
               selectedTab === index
-                ? "bg-white flex-1"
-                : "bg-[#D9D9D9] flex-none"
-            } flex justify-center items-center text-2xl h-full font-black  min-w-[20%] pointer transition`}
+                ? "bg-white flex-1 w-[40%]"
+                : "bg-[#D9D9D9] flex-none w-[15%]"
+            } flex justify-center items-center text-2xl h-full font-black cursor-pointer`}
             onClick={() => setSelectedTab(index)}
           >
             {tab.tabName}

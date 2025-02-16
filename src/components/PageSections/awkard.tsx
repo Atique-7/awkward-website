@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import placeHolder1 from "../../../public/placeholder1.png";
+import Circles from "../../../public/Circles.svg";
+
 import { Button } from "../ui/button";
 
 type Props = {};
@@ -21,19 +23,32 @@ const Home = (props: Props) => {
             chapter in your brand story, awkwardly?
           </div>
           <div className="flex justify-start space-x-10 items-center w-full mt-10">
-            <Button className="text-2xl font-bold p-5" variant={"awkward"}>
+            <Button className="text-2xl font-extrabold p-5" variant={"awkward"}>
               Get Started
             </Button>
             <Button
-              className="text-2xl font-normal p-5 bg-white"
+              className="text-2xl font-bold p-5 bg-white"
               variant={"awkward"}
             >
               Not Just Yet!
             </Button>
           </div>
         </div>
-        <div>
-          <Image src={placeHolder1} width={450} height={400} alt="Logo" />
+        <div className="relative w-[40%] h-[400px]">
+          <Image
+            src={Circles}
+            width={450}
+            height={400}
+            alt="Logo"
+            className="object-cover"
+          />
+          <Image
+            src={placeHolder1}
+            width={450}
+            height={400}
+            alt="Logo"
+            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+          />
         </div>
       </div>
     </div>

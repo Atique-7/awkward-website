@@ -70,3 +70,43 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9333ea !important;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.noScroll{
+  justify-content: center;
+}
+
+.noScrollIndicator{
+  display: none;
+}
+
+
+@media only screen and (max-height: 830px) {
+  .noScroll{
+    overflow-y: auto;
+    justify-content: start;
+  }
+  .noScrollIndicator{
+    display: flex;
+  }
+  
+}
