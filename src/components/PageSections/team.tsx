@@ -5,7 +5,7 @@ type Props = {};
 
 const Team = (props: Props) => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-[70%]">
       <div className="flex flex-col justify-evenly items-center h-full w-full">
         <div className="flex flex-col justify-center text-5xl font-extrabold w-full text-left">
           <div>
@@ -24,7 +24,7 @@ const Team = (props: Props) => {
             viverra id imperdiet nibh massa fringilla.
           </div>
         </div>
-        <div className="w-full h-[450px] overflow-y-scroll snap-y snap-mandatory mt-10">
+        <div className="elementScroll w-full h-[450px] overflow-y-scroll snap-y snap-mandatory mt-8 pr-5">
           <ScrollTriggered />
         </div>
       </div>

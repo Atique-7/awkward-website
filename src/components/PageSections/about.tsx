@@ -10,10 +10,10 @@ const About = (props: Props) => {
   const { scrollYProgress } = useScroll();
   return (
     <>
-      <div className="flex justify-center items-center w-full h-[600px]">
+      <div className="flex justify-center items-center w-[70%] h-[600px] mt-10">
         <div className="flex flex-col justify-evenly items-center h-full w-full">
-          <div className="border rounded-2xl p-16 w-full h-[600px] space-y-10 overflow-y-scroll snap-y snap-mandatory shadow-xl shadow-[#f8c41976]">
-            <div className="noScroll flex flex-col justify-center text-5xl font-extrabold w-full h-[550px] snap-center text-left">
+          <div className="elementScroll rounded-2xl w-full h-[600px] space-y-10 overflow-y-scroll snap-y snap-mandatory">
+            <div className=" flex flex-col justify-center text-5xl font-extrabold h-[550px] snap-center text-left mr-5 bg-[#F8C419] border-4 border-black rounded-2xl p-5">
               <div>
                 <div className="">
                   The Foundation of{" "}
@@ -33,7 +33,7 @@ const About = (props: Props) => {
                 Pretium venenatis viverra id imperdiet nibh massa fringilla.
               </div>
             </div>
-            <div className="noScroll flex flex-col justify-center text-5xl font-extrabold w-full h-[550px] snap-center text-left">
+            <div className=" flex flex-col justify-center text-5xl font-extrabold h-[550px] snap-center text-left mr-5 bg-[#F8C419] border-4 border-black rounded-2xl p-5">
               <div>
                 <div>Core Values</div>
               </div>

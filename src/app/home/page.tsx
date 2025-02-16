@@ -27,15 +27,13 @@ const HomePage = (props: Props) => {
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
       />
-      <div className="flex justify-center items-center mt-20">
-        <div className="w-[70%]">
-          {selectedTab === 0 && <Home />}
-          {selectedTab === 1 && <About />}
-          {selectedTab === 2 && <Team />}
+      <div className="flex justify-center items-center mt-10 w-full">
+        {selectedTab === 0 && <Home />}
+        {selectedTab === 1 && <About />}
+        {selectedTab === 2 && <Team />}
 
-          {selectedTab === 3 && <Services />}
-          {selectedTab === 4 && <Contact />}
-        </div>
+        {selectedTab === 3 && <Services />}
+        {selectedTab === 4 && <Contact />}
       </div>
     </div>
   );

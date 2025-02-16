@@ -9,11 +9,6 @@ type Props = {};
 const WebWindow = ({ children }: any) => {
   const [isMaximized, setIsMaximized] = useState(true);
 
-  const carouselRef = useRef(null);
-  const { scrollX } = useScroll({
-    container: carouselRef,
-  });
-
   const controls = useAnimation();
 
   useEffect(() => {
@@ -60,7 +55,7 @@ const WebWindow = ({ children }: any) => {
       <div className="bg-white text-slate-900 h-[98%] w-[99%] rounded-xl overflow-scroll scrollbar-hide">
         <motion.div
           initial={{ height: "100%" }}
-          animate={{ height: "8%" }}
+          animate={{ height: "9%" }}
           transition={{
             type: "spring",
             visualDuration: 2,
@@ -129,7 +124,7 @@ const WebWindow = ({ children }: any) => {
             </svg> */}
           </motion.div>
         </motion.div>
-        <div ref={carouselRef}>{children}</div>
+        <div>{children}</div>
         <div className="fixed bottom-5 left-[40%]">
           © Designed by AwkwardStudio , Memoji by Apple Inc.
         </div>

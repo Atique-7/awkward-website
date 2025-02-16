@@ -9,7 +9,7 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className="flex justify-center items-center w-full h-[600px]">
+    <div className="flex justify-center items-center w-[70%] h-[600px]">
       <div className="flex justify-evenly items-center h-full w-full">
         <div className="text-5xl font-extrabold w-[60%]">
           <div>
