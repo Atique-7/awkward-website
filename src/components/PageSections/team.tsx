@@ -5,7 +5,7 @@ type Props = {};
 
 const Team = (props: Props) => {
   return (
-    <div className="flex justify-center items-center w-[70%]">
+    <div className="flex justify-center items-center w-[70%] mt-10">
       <div className="flex flex-col justify-evenly items-center h-full w-full">
         <div className="flex flex-col justify-center text-5xl font-extrabold w-full text-left">
           <div>
