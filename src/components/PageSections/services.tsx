@@ -1,10 +1,6 @@
 import React from "react";
-import ScrollLinked from "../scrollLinked";
-import Parallax from "../scrollLinked";
 
-type Props = {};
-
-const Services = (props: Props) => {
+const Services = () => {
   return (
     <div className="text-3xl font-black mt-20 w-[80%]">
       <div className="flex flex-col w-full">

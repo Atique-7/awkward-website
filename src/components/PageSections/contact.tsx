@@ -7,9 +7,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { motion } from "motion/react";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div className="text-3xl font-black mt-20 w-[70%]">
       <div className="flex flex-col w-full">

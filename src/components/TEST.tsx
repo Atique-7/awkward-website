@@ -16,7 +16,7 @@ interface CardProps {
   i: number;
 }
 
-function Card({ emoji, i }: CardProps) {
+function Card({ emoji }: CardProps) {
   return (
     <motion.div
       className="relative flex items-center w-full snap-center h-[430px] overflow-hidden bg-[#F8C419] rounded-2xl p-10 border-4 border-black"
@@ -67,24 +67,6 @@ const cardVariants: Variants = {
       duration: 0.8,
     },
   },
-};
-
-/**
- * ==============   Styles   ================
- */
-
-const card: React.CSSProperties = {
-  fontSize: 164,
-  width: 300,
-  height: 430,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  borderRadius: 20,
-  background: "#f5f5f5",
-  boxShadow:
-    "0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075), 0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075), 0 0 16px hsl(0deg 0% 0% / 0.075)",
-  transformOrigin: "10% 60%",
 };
 
 /**

@@ -1,13 +1,6 @@
-"use client";
-
-import { motion, useScroll } from "motion/react";
 import React from "react";
-import ScrollLinked from "../TEST";
 
-type Props = {};
-
-const About = (props: Props) => {
-  const { scrollYProgress } = useScroll();
+const About = () => {
   return (
     <>
       <div className="flex justify-center items-center w-[70%] h-[600px] mt-10">

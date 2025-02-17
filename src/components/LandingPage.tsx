@@ -4,12 +4,10 @@ import { motion } from "motion/react";
 import React from "react";
 import Image from "next/image";
 import logo_with_text from "../../public/Logo with text.svg";
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-type Props = {};
-
-const LandingPage = (props: Props) => {
+const LandingPage = () => {
   return (
     <div className="flex justify-center items-center flex-col h-full relative mt-32 text-center overflow-hidden pb-20">
       <div className="text-[72px] font-[600] mb-16">We Are</div>

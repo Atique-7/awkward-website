@@ -1,9 +1,7 @@
 import React from "react";
 import ScrollTriggered from "../TEST";
 
-type Props = {};
-
-const Team = (props: Props) => {
+const Team = () => {
   return (
     <div className="flex justify-center items-center w-[70%] mt-10">
       <div className="flex flex-col justify-evenly items-center h-full w-full">
@@ -18,7 +16,7 @@ const Team = (props: Props) => {
             diam eget quis risus mattis turpis mauris. Volutpat egestas enim
             vulputate cursus scelerisque. Nunc mauris congue sagittis maecenas
             massa mauris curabitur pharetra vulputate. Elementum id egestas
-            justo at montes. Mattis hac elit id at porta mi aliquet enim. Lectus
+            justo at montes. Mattis hac elit id at pota mi aliquet enim. Lectus
             neque tempor semper rhoncus viverra vulputate. Est velit vitae in
             imperdiet lacus turpis nunc non adipiscing. Pretium venenatis
             viverra id imperdiet nibh massa fringilla.

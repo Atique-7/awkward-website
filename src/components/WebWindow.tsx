@@ -1,10 +1,7 @@
 "use client";
 
-import { motion, useAnimation, useScroll } from "motion/react";
-import { tr } from "motion/react-client";
-import React, { useEffect, useRef, useState } from "react";
-
-type Props = {};
+import { motion, useAnimation } from "motion/react";
+import React, { useEffect, useState } from "react";
 
 const WebWindow = ({ children }: any) => {
   const [isMaximized, setIsMaximized] = useState(true);

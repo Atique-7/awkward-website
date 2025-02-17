@@ -8,8 +8,6 @@ import Services from "@/components/PageSections/services";
 import TabSelector from "@/components/TabSelector";
 import React, { useState } from "react";
 
-type Props = {};
-
 const tabs = [
   { tabName: "AWKWARD STUDIO", tabUrl: "/home" },
   { tabName: "ABOUT US", tabUrl: "/about" },
@@ -18,7 +16,7 @@ const tabs = [
   { tabName: "CONTACT US", tabUrl: "/contact" },
 ];
 
-const HomePage = (props: Props) => {
+const HomePage = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
     <div className="flex h-full w-full justify-center flex-col">

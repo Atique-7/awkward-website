@@ -5,9 +5,7 @@ import Circles from "../../../public/Circles.svg";
 
 import { Button } from "../ui/button";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="flex justify-center items-center w-[70%] h-[600px]">
       <div className="flex justify-evenly items-center h-full w-full">
